@@ -8,16 +8,9 @@ export default class Navbar extends Component {
 	render() {
 		return (
 			<NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-				<Link className="navbar-brand" to="/">
+				<Link to="/">
 					<img className="" src={logo} alt="logo" />
 				</Link>
-				{/* <ul className="navbar-nav align-items-center">
-					<li className="nav-item ml-5">
-						<Link to="/" className="nav-link">
-							Products
-						</Link>
-					</li>
-				</ul> */}
 				<Link to="/store" className="ml-auto">
 					<ButtonContainer>
 						<span>
