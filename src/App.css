@@ -1,15 +1,16 @@
 :root {
-	--mainBlue: #008186;
-	--lightBlue: #00acb3;
+	--mainPrimary: #00acb3;
+	--mainLight: #95b0b2;
+	--mainDark: #36697e;
 	--mainWhite: #fef4f5;
-	--mainDark: #232528;
+	--mainDarker: #324b4c;
 	--mainYellow: #ffa440;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif !important;
 	background: var(--mainWhite) !important;
-	color: var(--mainDark) !important;
+	color: var(--mainDarker) !important;
 }
 
 .text-title {
@@ -26,5 +27,5 @@ body {
 }
 
 img {
-	height: 40px;
+	height: 2rem;
 }
