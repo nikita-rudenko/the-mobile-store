@@ -9,7 +9,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif !important;
-	background: var(--mainWhite) !important;
+	background: var(--mainLight) !important;
 	color: var(--mainDarker) !important;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .text-blue {
-	color: var(--mainBlue);
+	color: var(--mainYellow);
 }
 
 .text-bright {
