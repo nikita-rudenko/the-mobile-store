@@ -26,6 +26,10 @@ body {
 	color: var(--lightBlue);
 }
 
-img {
+.logo {
 	height: 2rem;
+}
+
+.card-img-top {
+	width: 400px;
 }
