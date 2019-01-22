@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-// import Product from './Product';
+import Product from './Product';
 import Title from './Title';
-import { storePhones } from '../data';
 import { ProductConsumer } from '../context';
 
 export default class ProductList extends Component {
-	state = {
-		products: storePhones
-	};
-
 	render() {
 		return (
 			<React.Fragment>
@@ -17,8 +12,10 @@ export default class ProductList extends Component {
 						<Title text="Welcome to our store!" />
 						<div className="row">
 							<ProductConsumer>
-								{hello => {
-									return <h1>{hello}</h1>;
+								{value => {
+									return value.products.map(phone => {
+										return <Product key={phone.id} product={phone} />;
+									});
 								}}
 							</ProductConsumer>
 						</div>
