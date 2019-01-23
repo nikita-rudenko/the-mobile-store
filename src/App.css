@@ -5,11 +5,12 @@
 	--mainWhite: #fef4f5;
 	--mainDarker: #324b4c;
 	--mainYellow: #ffa440;
+	--bgGradient: white;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif !important;
-	background: var(--mainLight) !important;
+	background: var(--bgGradient) !important;
 	color: var(--mainDarker) !important;
 }
 

@@ -2,7 +2,7 @@ export const storePhones = [
 	{
 		id: 1,
 		title: 'Google Pixel 3',
-		img: 'img/phone_1.jpg',
+		img: 'img/phone_1-min.jpg',
 		price: 799,
 		company: 'Google',
 		info: 'A new way to see the world',
@@ -13,7 +13,7 @@ export const storePhones = [
 	{
 		id: 2,
 		title: 'Samsung Note 9',
-		img: 'img/phone_2.jpg',
+		img: 'img/phone_2-min.jpg',
 		price: 999,
 		company: 'Samsung',
 		info: 'The new super powerful Note 9',
@@ -24,7 +24,7 @@ export const storePhones = [
 	{
 		id: 3,
 		title: 'Apple iPhone XS',
-		img: 'img/phone_3.jpg',
+		img: 'img/phone_3-min.jpg',
 		price: 999,
 		company: 'Apple',
 		info: 'Fastest performance with A12 Bionic',
@@ -35,7 +35,7 @@ export const storePhones = [
 	{
 		id: 4,
 		title: 'Samsung Galaxy S9+',
-		img: 'img/phone_4.jpg',
+		img: 'img/phone_4-min.jpg',
 		price: 840,
 		company: 'Samsung',
 		info: 'The revolutionary camera that adapts like the human eye.',
@@ -46,7 +46,7 @@ export const storePhones = [
 	{
 		id: 5,
 		title: 'Pocophone F1',
-		img: 'img/phone_5.jpg',
+		img: 'img/phone_5-min.jpg',
 		price: 300,
 		company: 'Xiaomi',
 		info: 'Master of Speed',
@@ -57,7 +57,7 @@ export const storePhones = [
 	{
 		id: 6,
 		title: 'Xiaomi Mi 8',
-		img: 'img/phone_6.jpg',
+		img: 'img/phone_6-min.jpg',
 		price: 400,
 		company: 'Xiaomi',
 		info: 'Ultra-thin four-sided curved body',
@@ -68,7 +68,7 @@ export const storePhones = [
 	{
 		id: 7,
 		title: 'Huawei Mate 10 Pro',
-		img: 'img/phone_7.jpg',
+		img: 'img/phone_7-min.jpg',
 		price: 800,
 		company: 'Huawei',
 		info: "World's first Kirin AI processor",
@@ -79,7 +79,7 @@ export const storePhones = [
 	{
 		id: 8,
 		title: 'Honor 10 Lite',
-		img: 'img/phone_8.jpg',
+		img: 'img/phone_8-min.jpg',
 		price: 330,
 		company: 'Huawei',
 		info: '24MP AI selfie in style',
@@ -92,7 +92,7 @@ export const storePhones = [
 export const detailPhone = {
 	id: 1,
 	title: 'Google Pixel 3',
-	img: 'img/phone_1.jpg',
+	img: 'img/phone_1-min.jpg',
 	price: 799,
 	company: 'Google',
 	info: 'A new way to see the world',
