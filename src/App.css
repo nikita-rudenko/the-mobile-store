@@ -5,7 +5,11 @@
 	--mainWhite: #fef4f5;
 	--mainDarker: #324b4c;
 	--mainYellow: #ffa440;
-	--bgGradient: white;
+	--bgGradient: radial-gradient(
+		circle,
+		rgba(187, 187, 187, 0.6306897759103641) 30%,
+		rgba(149, 176, 178, 0.4598214285714286) 62%
+	);
 }
 
 body {
@@ -20,7 +24,7 @@ body {
 }
 
 .text-blue {
-	color: var(--mainYellow);
+	color: var(--mainDark);
 }
 
 .text-bright {

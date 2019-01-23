@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { ProductConsumer } from '../context';
+// import { ProductConsumer } from '../context';
 
 export default class Product extends Component {
 	render() {
 		const { id, title, img, price, inCart } = this.props.product;
 		return (
-			<ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
+			<ProductWrapper key={id} className="col-9 mx-auto col-md-6 col-lg-3 my-3">
 				<div className="card">
-					<div className="img-container p-2" onClick={() => console.log('hi!')}>
+					<div className="img-container p-3" onClick={() => console.log('hi!')}>
 						<Link to="/details">
 							<img src={img} alt="product" className="card-img-top" />
 						</Link>
@@ -60,17 +60,17 @@ const ProductWrapper = styled.div`
 		overflow: hidden;
 	}
 	.card-img-top {
-		transition: all 0.2s linear;
+		transition: all 0.1s linear;
 	}
 	.img-container:hover .card-img-top {
-		transform: scale(1.04);
+		transform: scale(1.15);
 	}
 	.cart-btn {
 		position: absolute;
 		bottom: 0;
 		right: 0;
 		padding: 0.4rem 0.6rem;
-		background: var(--mainYellow);
+		background: var(--mainDark);
 		border: none;
 		color: var(--mainWhite);
 		border-radius: 1rem 0 0 0;
@@ -81,7 +81,7 @@ const ProductWrapper = styled.div`
 		transform: translate(0, 0);
 	}
 	.cart-btn:hover {
-		background: var(--mainDark);
+		background: var(--mainPrimary);
 		color: var(--mainWhite);
 		cursor: pointer;
 	}
