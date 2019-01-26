@@ -19,7 +19,7 @@ export default class Details extends Component {
 						specs
 					} = value.details;
 					return (
-						<div className="bg-white container mt-4 py-2 rounded">
+						<div className="bg-white container my-4 py-2 rounded">
 							<div className="row">
 								<div className="col-10 mx-auto text-center text-blue my-3">
 									<h2>{title}</h2>
@@ -29,21 +29,21 @@ export default class Details extends Component {
 								<div className="col-10 mx-auto col-md-6 pt-1 mb-4">
 									<img className="img-fluid" src={img} alt="phone" />
 								</div>
-								<div className="col-10 mx-auto col-md-5 py-5">
-									<p>
+								<div className="col-10 mx-auto col-md-6 py-5 text-justify">
+									<p className="col-md-10">
 										<strong>Model:</strong> {title}
 									</p>
-									<p>
+									<p className="col-md-10">
 										<strong>Manufacturer:</strong> {company}
 									</p>
-									<p>
+									<p className="col-md-10">
 										<strong className="font-weight-bold">Description:</strong>{' '}
 										{info}
 									</p>
-									<h4 className="p-2 text-center font-weight-bold font-italic">
+									<h4 className="p-2 col-md-10 text-center font-weight-bold font-italic">
 										<strong>Price: ${price}</strong>
 									</h4>
-									<div className="p-2 text-center">
+									<div className="p-2 col-md-10 text-center">
 										<Link to="/">
 											<ButtonContainer>Back to Main</ButtonContainer>
 										</Link>
@@ -68,7 +68,7 @@ export default class Details extends Component {
 									</tr>
 									<tr>
 										<th scope="row">Display</th>
-										<td>{specs.body}</td>
+										<td>{specs.display}</td>
 									</tr>
 									<tr>
 										<th scope="row">Platform</th>
