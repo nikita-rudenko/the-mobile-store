@@ -5,7 +5,7 @@ export const ButtonContainer = styled.button`
 	text-transform: capitalize;
 	font-size: 1.2rem;
 	color: var(--mainWhite);
-	background: transparent;
+	background: var(--mainDark);
 	border: none;
 	border-radius: 0.3rem;
 	padding: 0.2rem 0.8rem;

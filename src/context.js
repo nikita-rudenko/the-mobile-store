@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { storePhones, detailPhone } from './data';
+import { storePhones, detailsPhone } from './data';
 
 const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
 	state = {
 		products: [],
-		detail: detailPhone
+		details: detailsPhone
 	};
 
 	componentDidMount() {

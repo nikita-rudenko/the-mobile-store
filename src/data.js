@@ -89,13 +89,14 @@ export const storePhones = [
 	}
 ];
 
-export const detailPhone = {
+export const detailsPhone = {
 	id: 1,
 	title: 'Google Pixel 3',
 	img: 'img/phone_1-min.jpg',
 	price: 799,
 	company: 'Google',
-	info: 'A new way to see the world',
+	info:
+		'Staying too far from your loved ones? Video call them for hours on end. The weather is romantic? Listen to your favourite playlists all day long. Don’t want to go out this weekend? Then binge watch your favourite series on the Internet. The Pixel 3 ensures that there’s never a dull moment, all thanks to its powerful battery, impressive cameras and its expansive bezel-less display.',
 	inCart: false,
 	count: 0,
 	total: 0
