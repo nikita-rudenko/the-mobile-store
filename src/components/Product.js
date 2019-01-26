@@ -99,7 +99,7 @@ const ProductWrapper = styled.div`
 		transform: translate(0, 0);
 	}
 	.cart-btn:hover {
-		background: var(--mainPrimary);
+		background: var(--mainAccent);
 		color: var(--mainWhite);
 		cursor: pointer;
 	}

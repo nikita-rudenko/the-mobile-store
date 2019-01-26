@@ -1,10 +1,10 @@
 :root {
-	--mainPrimary: #49c9af;
+	--mainAccent: #49c9af;
 	--mainLight: #95b0b2;
 	--mainDark: #2b3e50;
-	--mainWhite: #fef4f5;
 	--mainDarker: #324b4c;
-	--mainYellow: #ffa440;
+	--btnBlue: #389ae9;
+	--mainWhite: #fef4f5;
 	--bgGradient: radial-gradient(
 		circle,
 		rgba(187, 187, 187, 0.6306897759103641) 30%,
@@ -25,10 +25,6 @@ body {
 
 .text-blue {
 	color: var(--mainDark);
-}
-
-.text-bright {
-	color: var(--lightBlue);
 }
 
 .logo {
