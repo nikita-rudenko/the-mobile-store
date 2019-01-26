@@ -14,7 +14,7 @@ export default class Navbar extends Component {
 				<Link to="/store" className="ml-auto">
 					<ButtonContainer>
 						<span>
-							<i className="fas fa-cart-plus" />
+							<i className="fas fa-shopping-cart" />
 							<span> my cart</span>
 						</span>
 					</ButtonContainer>
@@ -29,6 +29,5 @@ const NavWrapper = styled.nav`
 	.nav-link {
 		color: var(--mainWhite) !important;
 		font-size: 1.1rem;
-		text-transform: uppercase;
 	}
 `;

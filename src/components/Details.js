@@ -36,9 +36,10 @@ export default class Details extends Component {
 										<strong>Manufacturer:</strong> {company}
 									</p>
 									<p>
-										<strong>Description:</strong> {info}
+										<strong className="font-weight-bold">Description:</strong>{' '}
+										{info}
 									</p>
-									<h4 className="p-2">
+									<h4 className="p-2 font-weight-bold font-italic">
 										<strong>Price: ${price}</strong>
 									</h4>
 									<div className="p-2">
@@ -46,9 +47,10 @@ export default class Details extends Component {
 											<ButtonContainer>Back to Main</ButtonContainer>
 										</Link>
 										<ButtonContainer
+											cart
 											disabled={inCart ? true : false}
 											onClick={() => {
-												value.addToCart(id);
+												value.handleAddToCart(id);
 											}}>
 											{inCart ? 'In Cart' : 'Add to Cart'}
 										</ButtonContainer>
