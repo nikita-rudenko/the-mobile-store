@@ -23,7 +23,7 @@ export default class Modal extends Component {
 											id="modal"
 											className="col-10 mx-auto col-md-6 col-lg-4 text-center py-5">
 											<h5>Item Added To The Cart</h5>
-											<img className="img-fluid py-3" src={img} alt="product" />
+											<img className="img-fluid p-3" src={img} alt="product" />
 											<h5 className="">{title}</h5>
 											<h5 className="font-italic font-weight-bold">
 												Price: ${price}
@@ -60,6 +60,7 @@ const ModalContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.1s ease-in-out;
 
 	#modal {
 		background: var(--mainWhite);
