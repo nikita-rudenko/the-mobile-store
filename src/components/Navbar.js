@@ -11,7 +11,7 @@ export default class Navbar extends Component {
 				<Link to="/">
 					<img className="logo" src={logo} alt="logo" />
 				</Link>
-				<Link to="/store" className="ml-auto">
+				<Link to="/store" className="ml-auto mr-0">
 					<ButtonContainer>
 						<span>
 							<i className="fas fa-shopping-cart" />

@@ -45,7 +45,7 @@ export default class Details extends Component {
 									</h4>
 									<div className="p-2 col-md-10 text-center">
 										<Link to="/">
-											<ButtonContainer>Back to Main</ButtonContainer>
+											<ButtonContainer>Go Back</ButtonContainer>
 										</Link>
 										<ButtonContainer
 											cart

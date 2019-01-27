@@ -21,21 +21,21 @@ export default class Modal extends Component {
 									<div className="row">
 										<div
 											id="modal"
-											className="col-10 mx-auto col-md-6 col-lg-4 text-center py-5">
-											<h5>Item Added To The Cart</h5>
+											className="col-10 mx-auto col-md-6 col-lg-4 text-center pt-4 pb-3 rounded">
+											<h3>Item Added To The Cart</h3>
 											<img className="img-fluid p-3" src={img} alt="product" />
-											<h5 className="">{title}</h5>
+											<h4 className="">{title}</h4>
 											<h5 className="font-italic font-weight-bold">
 												Price: ${price}
 											</h5>
-											<Link to="/">
-												<ButtonContainer onClick={() => closeModal()}>
-													Back to Main
-												</ButtonContainer>
-											</Link>
 											<Link to="/cart">
 												<ButtonContainer cart onClick={() => closeModal()}>
 													Go to Cart
+												</ButtonContainer>
+											</Link>
+											<Link to="/">
+												<ButtonContainer onClick={() => closeModal()}>
+													Close
 												</ButtonContainer>
 											</Link>
 										</div>
@@ -63,6 +63,6 @@ const ModalContainer = styled.div`
 	transition: all 0.1s ease-in-out;
 
 	#modal {
-		background: var(--mainWhite);
+		background: #fff;
 	}
 `;

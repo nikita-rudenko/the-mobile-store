@@ -1,10 +1,11 @@
 :root {
-	--mainAccent: #49c9af;
+	--mainAccent: #39b891;
 	--mainLight: #95b0b2;
+	--mainWhite: #fef4f5;
 	--mainDark: #2b3e50;
 	--mainDarker: #324b4c;
-	--btnBlue: #389ae9;
-	--mainWhite: #fef4f5;
+	--btnBlueMain: #25798f;
+	--btnBlueAccent: #23b9b8;
 	--bgGradient: radial-gradient(
 		circle,
 		rgba(187, 187, 187, 0.6306897759103641) 30%,
@@ -33,4 +34,10 @@ body {
 
 .card-img-top {
 	width: 400px;
+}
+
+@media screen and (max-width: 330px) {
+	.logo {
+		height: 1.5rem;
+	}
 }
