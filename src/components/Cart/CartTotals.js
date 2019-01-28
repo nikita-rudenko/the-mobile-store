@@ -17,15 +17,15 @@ export default function CartTotals({ value }) {
 								<i class="fas fa-times-circle" /> Clear Cart
 							</button>
 						</Link>
-						<h3>
+						<h4>
 							<strong>Subtotal:</strong> ${cartSubTotal}
-						</h3>
-						<h3>
+						</h4>
+						<h4>
 							<strong>Tax:</strong> ${cartTax}
-						</h3>
-						<h3>
+						</h4>
+						<h4>
 							<strong className="text-title">Total:</strong> ${cartTotal}
-						</h3>
+						</h4>
 					</div>
 				</div>
 			</div>
