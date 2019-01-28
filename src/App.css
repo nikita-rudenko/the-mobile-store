@@ -36,7 +36,31 @@ body {
 	width: 400px;
 }
 
-@media screen and (max-width: 330px) {
+.btn-black {
+	text-transform: uppercase;
+	font-size: 1rem !important;
+	font-weight: 900 !important;
+	background: var(--mainDarker) !important;
+	color: var(--mainWhite) !important;
+	border-radius: 999rem !important;
+	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-black:hover {
+	background: var(--mainAccent) !important;
+}
+
+.btn-black:active {
+	transform: translateY(1.5px);
+}
+
+.trash-icon {
+	cursor: pointer;
+	font-size: 1rem;
+	color: orangered;
+}
+
+@media screen and (max-width: 350px) {
 	.logo {
 		height: 1.5rem;
 	}

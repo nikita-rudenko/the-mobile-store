@@ -8,14 +8,14 @@ import { ProductConsumer } from '../../context';
 export default class Cart extends Component {
 	render() {
 		return (
-			<section>
+			<section className="bg-white">
 				<ProductConsumer>
 					{value => {
 						const { cart } = value;
 						if (cart.length) {
 							return (
 								<React.Fragment>
-									<Title text="Cart" />
+									<Title text="Your Cart" />
 									<CartColumns />
 									<CartList value={value} />
 								</React.Fragment>
