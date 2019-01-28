@@ -6,6 +6,8 @@
 	--mainDarker: #324b4c;
 	--btnBlueMain: #25798f;
 	--btnBlueAccent: #23b9b8;
+	--btnDangerMain: #fa9435e3;
+	--btnDangerAccent: #f53333;
 	--bgGradient: radial-gradient(
 		circle,
 		rgba(187, 187, 187, 0.6306897759103641) 30%,
@@ -61,12 +63,12 @@ body {
 
 .btn-trash {
 	cursor: pointer;
-	background: #fa9435e3 !important;
+	background: var(--btnDangerMain) !important;
 	font-size: 1rem;
 }
 
 .btn-trash:hover {
-	background: #f53333 !important;
+	background: var(--btnDangerAccent) !important;
 }
 
 @media screen and (max-width: 350px) {
