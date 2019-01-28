@@ -8,7 +8,7 @@ import { ProductConsumer } from '../../context';
 export default class Cart extends Component {
 	render() {
 		return (
-			<section className="bg-white">
+			<section>
 				<ProductConsumer>
 					{value => {
 						const { cart } = value;

@@ -26,6 +26,7 @@ export default class Product extends Component {
 										value.openModal(id);
 									}}
 									className="cart-btn"
+									title="Add To Cart"
 									disabled={inCart ? true : false}>
 									{inCart ? (
 										<p className="text-capitalize mb-0" disabled>

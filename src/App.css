@@ -36,14 +36,21 @@ body {
 	width: 400px;
 }
 
-.btn-black {
+.cart-columns {
+	background: var(--mainDark);
+}
+
+.btn-c {
 	text-transform: uppercase;
 	font-size: 1rem !important;
 	font-weight: 900 !important;
-	background: var(--mainDarker) !important;
 	color: var(--mainWhite) !important;
 	border-radius: 999rem !important;
 	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-black {
+	background: var(--mainDarker) !important;
 }
 
 .btn-black:hover {
@@ -54,10 +61,14 @@ body {
 	transform: translateY(1.5px);
 }
 
-.trash-icon {
+.btn-trash {
 	cursor: pointer;
+	background: #f89235 !important;
 	font-size: 1rem;
-	color: orangered;
+}
+
+.btn-trash:hover {
+	background: #e01e1e !important;
 }
 
 @media screen and (max-width: 350px) {
