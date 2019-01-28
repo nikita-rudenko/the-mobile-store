@@ -7,12 +7,12 @@ class ProductProvider extends Component {
 	state = {
 		products: [],
 		details: detailsPhone,
-		cart: [],
+		cart: storePhones,
 		modalOpen: false,
 		modalProduct: detailsPhone,
-		cartSubTotal: 0,
-		cartTax: 0,
-		cartTotal: 0
+		cartSubTotal: 10,
+		cartTax: 12,
+		cartTotal: 3454
 	};
 
 	componentDidMount() {
