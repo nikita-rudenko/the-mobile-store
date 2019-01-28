@@ -42,8 +42,6 @@ body {
 
 .btn-c {
 	text-transform: uppercase;
-	font-size: 1rem !important;
-	font-weight: 900 !important;
 	color: var(--mainWhite) !important;
 	border-radius: 999rem !important;
 	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -63,12 +61,12 @@ body {
 
 .btn-trash {
 	cursor: pointer;
-	background: #f89235 !important;
+	background: #fa9435e3 !important;
 	font-size: 1rem;
 }
 
 .btn-trash:hover {
-	background: #e01e1e !important;
+	background: #f53333 !important;
 }
 
 @media screen and (max-width: 350px) {

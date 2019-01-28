@@ -61,7 +61,7 @@ export default class Details extends Component {
 							</div>
 
 							<h3 className="text-center py-3">Specifications</h3>
-							<table class="col-8 mx-auto table fluid">
+							<table className="col-8 mx-auto table fluid">
 								<tbody>
 									<tr>
 										<th scope="row">Body</th>
@@ -85,18 +85,24 @@ export default class Details extends Component {
 									</tr>
 									<tr>
 										<th scope="row">Camera</th>
-										<tr>
-											<th>Main</th>
-											<td>{specs.camera.main}</td>
-										</tr>
-										<tr>
-											<th>Selfie</th>
-											<td>{specs.camera.selfie}</td>
-										</tr>
-										<tr>
-											<th>Features</th>
-											<td>{specs.camera.features}</td>
-										</tr>
+										<td>
+											<table className="table">
+												<tbody>
+													<tr>
+														<th>Main</th>
+														<td>{specs.camera.main}</td>
+													</tr>
+													<tr>
+														<th>Selfie</th>
+														<td>{specs.camera.selfie}</td>
+													</tr>
+													<tr>
+														<th>Features</th>
+														<td>{specs.camera.features}</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
 									</tr>
 									<tr>
 										<th scope="row">Battery</th>

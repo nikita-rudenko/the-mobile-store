@@ -5,7 +5,7 @@ export default function CartItem({ item, value }) {
 	const { increment, decrement, removeItem } = value;
 
 	return (
-		<div className="cart-item row py-3 text-center bg-white rounded">
+		<div className="cart-item row py-3 text-center bg-white rounded border">
 			<div className="col-10 mx-auto col-lg-2 my-1 my-lg-auto">
 				<img
 					className="img-fluid"
@@ -15,11 +15,17 @@ export default function CartItem({ item, value }) {
 				/>
 			</div>
 			<div className="col-10 mx-auto col-lg-2 my-1 my-lg-auto">
-				<span className="d-lg-none">Item:</span>
+				<span className="d-lg-none">
+					<strong>Item:</strong>{' '}
+				</span>
 				{title}
 			</div>
 			<div className="col-10 mx-auto col-lg-2 my-1 my-lg-auto">
-				<span className="d-lg-none">Price:</span> $ {price}
+				<span className="d-lg-none">
+					{' '}
+					<strong>Price:</strong>{' '}
+				</span>{' '}
+				${price}
 			</div>
 			<div className="col-10 mx-auto col-lg-2 my-1 my-lg-auto">
 				<div className="d-flex justify-content-center">
@@ -27,13 +33,13 @@ export default function CartItem({ item, value }) {
 						<span
 							className="btn btn-c btn-black mx-1"
 							onClick={() => decrement(id)}>
-							&#8722;
+							<i class="fas fa-minus" />
 						</span>
 						<span className="mx-2">{count}</span>
 						<span
 							className="btn btn-c btn-black mx-1"
 							onClick={() => increment(id)}>
-							&#43;
+							<i class="fas fa-plus" />
 						</span>
 					</div>
 				</div>
@@ -44,7 +50,7 @@ export default function CartItem({ item, value }) {
 				</div>
 			</div>
 			<div className="col-10 mx-auto col-lg-2 my-1 my-lg-auto">
-				<strong>Item total:</strong> $ {total}
+				<strong>Item total:</strong> ${total}
 			</div>
 		</div>
 	);
