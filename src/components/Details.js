@@ -33,14 +33,14 @@ export default class Details extends Component {
 								<div className="col-10 mx-auto col-md-6 pt-1 mb-4">
 									<img className="img-fluid" src={img} alt="phone" />
 								</div>
-								<div className="col-10 mx-auto col-md-6 py-5 text-justify">
+								<div className="col-10 mx-auto col-md-6 py-5">
 									<p className="col-md-10">
 										<strong>Model:</strong> {title}
 									</p>
 									<p className="col-md-10">
 										<strong>Manufacturer:</strong> {company}
 									</p>
-									<p className="col-md-10">
+									<p className="col-md-10 text-justify">
 										<strong className="font-weight-bold">Description:</strong>{' '}
 										{info}
 									</p>
