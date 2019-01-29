@@ -33,13 +33,13 @@ export default function CartItem({ item, value }) {
 						<span
 							className="btn btn-c btn-black mx-1"
 							onClick={() => decrement(id)}>
-							<i class="fas fa-minus" />
+							<i className="fas fa-minus" />
 						</span>
 						<span className="mx-2">{count}</span>
 						<span
 							className="btn btn-c btn-black mx-1"
 							onClick={() => increment(id)}>
-							<i class="fas fa-plus" />
+							<i className="fas fa-plus" />
 						</span>
 					</div>
 				</div>

@@ -14,7 +14,7 @@ export default function CartTotals({ value }) {
 								className="btn btn-c btn-danger my-3 mr-2"
 								type="button"
 								onClick={() => clearCart()}>
-								<i class="fas fa-times-circle" /> Clear Cart
+								<i className="fas fa-times-circle" /> Clear Cart
 							</button>
 						</Link>
 						<h4>
