@@ -28,7 +28,7 @@ export default class Modal extends Component {
 											<h5 className="font-italic font-weight-bold">
 												Price: ${price}
 											</h5>
-											<Link to="/store">
+											<Link to="/cart">
 												<ButtonContainer cart onClick={() => closeModal()}>
 													Go to Cart
 												</ButtonContainer>

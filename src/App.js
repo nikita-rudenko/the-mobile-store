@@ -17,7 +17,7 @@ class App extends Component {
 				<Switch>
 					<Route exact path="/" component={ProductList} />
 					<Route path="/details" component={Details} />
-					<Route path="/store" component={Cart} />
+					<Route path="/cart" component={Cart} />
 					<Route component={Default} />
 				</Switch>
 				<Modal />
