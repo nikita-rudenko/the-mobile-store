@@ -34,10 +34,6 @@ body {
 	height: 2rem;
 }
 
-.card-img-top {
-	width: 400px;
-}
-
 .cart-columns {
 	background: var(--mainDark);
 }
