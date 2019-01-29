@@ -9,10 +9,10 @@ export default function CartTotals({ value, history }) {
 		<React.Fragment>
 			<div className="container">
 				<div className="row">
-					<div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-right">
+					<div className="col-12 fluid mt-2 ml-md-auto mr-sm-2 col-sm-12 text-right">
 						<Link to="/">
 							<button
-								className="btn btn-c btn-danger my-3 mr-2"
+								className="btn btn-c btn-danger my-3"
 								type="button"
 								onClick={() => clearCart()}>
 								<i className="fas fa-times-circle" /> Clear Cart
