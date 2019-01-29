@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import { ButtonContainer } from './Button';
 
 export default class Details extends Component {
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
+
 	render() {
 		return (
 			<ProductConsumer>
