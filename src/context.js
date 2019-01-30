@@ -105,7 +105,9 @@ class ProductProvider extends Component {
 
 		const index = tempCart.indexOf(selected);
 		const product = tempCart[index];
+
 		product.count = product.count - 1;
+		product.total = product.count * product.price;
 
 		if (product.count === 0) {
 			this.removeItem(id);
