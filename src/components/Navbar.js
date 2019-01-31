@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../logo.png';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
+import { ProductConsumer } from '../context';
 
 export default class Navbar extends Component {
 	render() {
@@ -16,7 +17,16 @@ export default class Navbar extends Component {
 						<span>
 							<i className="fas fa-shopping-cart" />
 							<span> my cart</span>
-						</span>
+						</span>{' '}
+						<ProductConsumer>
+							{value => {
+								if (value.itemsTotalCount) {
+									return <ItemCountDot>{value.itemsTotalCount}</ItemCountDot>;
+								} else {
+									return;
+								}
+							}}
+						</ProductConsumer>
 					</ButtonContainer>
 				</Link>
 			</NavWrapper>
@@ -30,4 +40,16 @@ const NavWrapper = styled.nav`
 		color: var(--mainWhite) !important;
 		font-size: 1.1rem;
 	}
+`;
+
+const ItemCountDot = styled.span`
+	background: var(--btnDangerMain);
+	display: inline-block;
+	top: 0px;
+	left: 0px;
+	border-radius: 20rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	font-size: 1rem;
+	font-weight: 900;
 `;

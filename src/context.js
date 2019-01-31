@@ -10,6 +10,7 @@ class ProductProvider extends Component {
 		cart: [],
 		modalOpen: false,
 		modalProduct: detailsPhone,
+		itemsTotalCount: 0,
 		cartSubTotal: 0,
 		cartTax: 0,
 		cartTotal: 0
@@ -157,6 +158,9 @@ class ProductProvider extends Component {
 	};
 
 	addTotals = () => {
+		let itemsCount = 0;
+		this.state.cart.map(item => (itemsCount += item.count));
+
 		let subTotal = 0;
 		this.state.cart.map(item => (subTotal += item.total));
 
@@ -165,6 +169,7 @@ class ProductProvider extends Component {
 		const total = subTotal + tax;
 
 		this.setState({
+			itemsTotalCount: itemsCount,
 			cartSubTotal: subTotal,
 			cartTax: tax,
 			cartTotal: total
