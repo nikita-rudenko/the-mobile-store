@@ -58,13 +58,20 @@ body {
 }
 
 .btn-trash {
-	cursor: pointer;
 	background: var(--btnDangerMain) !important;
 	font-size: 1rem;
 }
 
 .btn-trash:hover {
 	background: var(--btnDangerAccent) !important;
+}
+
+.btn-back {
+	background: var(--mainDark) !important;
+}
+
+.btn-back:hover {
+	background: var(--mainAccent) !important;
 }
 
 @media screen and (max-width: 350px) {

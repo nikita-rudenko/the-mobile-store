@@ -10,14 +10,21 @@ export default function CartTotals({ value, history }) {
 			<div className="container">
 				<div className="row">
 					<div className="col-12 fluid mt-2 ml-md-auto mr-sm-2 col-sm-12 text-right">
-						<Link to="/">
-							<button
-								className="btn btn-c btn-danger my-3"
-								type="button"
-								onClick={() => clearCart()}>
-								<i className="fas fa-times-circle" /> Clear Cart
-							</button>
-						</Link>
+						<div className="d-flex justify-content-between">
+							<Link to="/">
+								<button className="btn btn-c btn-back my-3" type="button">
+									Go Back
+								</button>
+							</Link>
+							<Link to="/">
+								<button
+									className="btn btn-c btn-danger my-3"
+									type="button"
+									onClick={() => clearCart()}>
+									<i className="fas fa-times-circle" /> Clear Cart
+								</button>
+							</Link>
+						</div>
 						<h4>
 							<strong>Subtotal:</strong> ${cartSubTotal}
 						</h4>
