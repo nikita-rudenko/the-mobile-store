@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CartItem({ item, value }) {
 	const { id, title, img, price, total, count } = item;
@@ -18,7 +19,7 @@ export default function CartItem({ item, value }) {
 				<span className="d-lg-none">
 					<strong>Item:</strong>{' '}
 				</span>
-				{title}
+				<Link to="/details">{title}</Link>
 			</div>
 			<div className="col-10 mx-auto col-lg-2 my-1 my-lg-auto">
 				<span className="d-lg-none">

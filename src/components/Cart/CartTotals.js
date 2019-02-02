@@ -13,7 +13,7 @@ export default function CartTotals({ value, history }) {
 						<div className="d-flex justify-content-between">
 							<Link to="/">
 								<button className="btn btn-c btn-back my-3" type="button">
-									Go Back
+									To Store
 								</button>
 							</Link>
 							<Link to="/">

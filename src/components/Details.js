@@ -49,7 +49,7 @@ export default class Details extends Component {
 									</h4>
 									<div className="p-2 col-md-10 text-center">
 										<Link to="/">
-											<ButtonContainer>Go Back</ButtonContainer>
+											<ButtonContainer>To Store</ButtonContainer>
 										</Link>
 										<ButtonContainer
 											cart

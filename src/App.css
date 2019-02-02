@@ -21,6 +21,11 @@ body {
 	color: var(--mainDarker) !important;
 }
 
+a {
+	color: var(--mainDark) !important;
+	text-decoration: none !important;
+}
+
 .text-title {
 	letter-spacing: 0.3rem;
 	text-transform: uppercase;
