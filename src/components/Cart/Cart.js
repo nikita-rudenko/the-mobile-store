@@ -4,6 +4,7 @@ import CartColumns from './CartColumns';
 import EmptyCart from './EmptyCart';
 import CartList from './CartList';
 import CartTotals from './CartTotals';
+import Modal from './ModalConfirm';
 import { ProductConsumer } from '../../context';
 
 export default class Cart extends Component {
@@ -20,6 +21,7 @@ export default class Cart extends Component {
 									<CartColumns />
 									<CartList value={value} />
 									<CartTotals value={value} history={this.props.history} />
+									<Modal />
 								</React.Fragment>
 							);
 						} else {

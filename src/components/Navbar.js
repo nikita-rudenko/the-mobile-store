@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../logo.png';
 import styled from 'styled-components';
-import { ButtonContainer } from './Button';
+import { ButtonContainer } from './styled/Button';
 import { ProductConsumer } from '../context';
 
 export default class Navbar extends Component {
