@@ -19,7 +19,9 @@ export default function CartItem({ item, value }) {
 				<span className="d-lg-none">
 					<strong>Item:</strong>{' '}
 				</span>
-				<Link to="/details">{title}</Link>
+				<Link to="/details" onClick={() => value.handleDetails(id)}>
+					{title}
+				</Link>
 			</div>
 			<div className="col-10 mx-auto col-lg-2 my-1 my-lg-auto">
 				<span className="d-lg-none">
