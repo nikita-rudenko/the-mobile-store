@@ -138,21 +138,21 @@ class ProductProvider extends Component {
 		const index = tempCart.indexOf(selected);
 		const product = tempCart[index];
 
+		if (product.count === 1) {
+			return;
+		}
+
 		product.count = product.count - 1;
 		product.total = product.count * product.price;
 
-		if (product.count === 0) {
-			this.removeItem(id);
-		} else {
-			this.setState(
-				() => {
-					return { cart: [...tempCart] };
-				},
-				() => {
-					this.addTotals();
-				}
-			);
-		}
+		this.setState(
+			() => {
+				return { cart: [...tempCart] };
+			},
+			() => {
+				this.addTotals();
+			}
+		);
 	};
 
 	removeItem = id => {
