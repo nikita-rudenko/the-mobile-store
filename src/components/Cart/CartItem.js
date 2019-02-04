@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function CartItem({ item, value }) {
 	const { id, title, img, price, total, count } = item;
-	const { increment, decrement, removeItem } = value;
+	const { increment, decrement, removeItem, openConfirm } = value;
 
 	return (
 		<div className="cart-item row py-3 text-center bg-white rounded border">
@@ -50,7 +50,7 @@ export default function CartItem({ item, value }) {
 			<div className="col-10 mx-auto col-lg-2 my-1 my-lg-auto">
 				<div
 					className="btn btn-c btn-trash"
-					onClick={() => removeItem(id)}
+					onClick={() => openConfirm(removeItem, id)}
 					title="Remove Item">
 					<i className="fas fa-trash" />
 				</div>

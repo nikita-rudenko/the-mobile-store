@@ -9,6 +9,8 @@ class ProductProvider extends Component {
 		details: detailsPhone,
 		cart: [],
 		modalOpen: false,
+		confirmOpen: false,
+		onConfirm: [],
 		modalProduct: detailsPhone,
 		itemsTotalCount: 0,
 		cartSubTotal: 0,
@@ -79,6 +81,35 @@ class ProductProvider extends Component {
 		});
 	};
 
+	openConfirm = (func, id) => {
+		const args = [func, id];
+		this.setState({
+			confirmOpen: true,
+			onConfirm: [...args]
+		});
+	};
+
+	closeConfirm = answer => {
+		const todo = this.state.onConfirm[0];
+		const item = this.state.onConfirm[1];
+		console.log(todo, item);
+		if (todo && item && answer) {
+			todo(item);
+		} else if (todo && answer) {
+			todo();
+		} else {
+			this.setState({
+				confirmOpen: false,
+				onConfirm: []
+			});
+			return;
+		}
+		this.setState({
+			confirmOpen: false,
+			onConfirm: []
+		});
+	};
+
 	// cart methods
 	increment = id => {
 		let tempCart = [...this.state.cart];
@@ -125,6 +156,7 @@ class ProductProvider extends Component {
 	};
 
 	removeItem = id => {
+		this.openConfirm();
 		let tempCart = [...this.state.cart];
 		let tempProducts = [...this.state.products];
 
@@ -189,7 +221,9 @@ class ProductProvider extends Component {
 					increment: this.increment,
 					decrement: this.decrement,
 					removeItem: this.removeItem,
-					clearCart: this.clearCart
+					clearCart: this.clearCart,
+					openConfirm: this.openConfirm,
+					closeConfirm: this.closeConfirm
 				}}>
 				{this.props.children}
 			</ProductContext.Provider>
