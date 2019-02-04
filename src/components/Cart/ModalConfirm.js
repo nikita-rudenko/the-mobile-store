@@ -16,12 +16,29 @@ export default class ModalConfirm extends Component {
 					} else {
 						return (
 							<ModalContainer>
-								<ButtonContainer onClick={() => closeConfirm(true)}>
-									Delete
-								</ButtonContainer>
-								<ButtonContainer onClick={() => closeConfirm(false)}>
-									Cancel
-								</ButtonContainer>
+								<div className="container">
+									<div className="row">
+										<div
+											id="modal"
+											className="col-10 mx-auto col-md-6 col-lg-4 text-center px-3 py-4 rounded">
+											<div className="text-center p-2">
+												<i className="fas fa-exclamation-circle" />
+											</div>
+											<h3>Are you sure?</h3>
+											<ButtonContainer
+												type="button"
+												className="btn-trash"
+												onClick={() => closeConfirm(true)}>
+												Yes
+											</ButtonContainer>
+											<ButtonContainer
+												type="button"
+												onClick={() => closeConfirm(false)}>
+												Cancel
+											</ButtonContainer>
+										</div>
+									</div>
+								</div>
 							</ModalContainer>
 						);
 					}

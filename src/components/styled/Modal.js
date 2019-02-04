@@ -14,5 +14,11 @@ export const ModalContainer = styled.div`
 
 	#modal {
 		background: #fff;
+		 {
+			i {
+				font-size: 6rem;
+				color: var(--btnDangerAccent);
+			}
+		}
 	}
 `;

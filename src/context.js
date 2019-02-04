@@ -118,6 +118,10 @@ class ProductProvider extends Component {
 		const index = tempCart.indexOf(selected);
 		const product = tempCart[index];
 
+		if (product.count === 99) {
+			return;
+		}
+
 		product.count = product.count + 1;
 		product.total = product.count * product.price;
 

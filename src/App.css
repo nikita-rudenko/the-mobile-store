@@ -79,6 +79,10 @@ a {
 	background: var(--mainAccent) !important;
 }
 
+.btn-delete {
+	background: var(--btnDangerMain) !important;
+}
+
 @media screen and (max-width: 350px) {
 	.logo {
 		height: 1.5rem;
