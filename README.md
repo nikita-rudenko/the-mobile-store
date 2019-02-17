@@ -1,4 +1,4 @@
-#The Mobile Store
+# The Mobile Store
 
 The Mobile Store is an e-commerce site project to sell goods (e.g. mobile phones) built with Create-React-App
 
