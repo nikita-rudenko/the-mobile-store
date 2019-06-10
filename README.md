@@ -20,5 +20,4 @@ Available live on Netlify [here](https://the-mobile-store.netlify.com/)
 - react-dom
 - react-router-dom
 - react-scripts
-- react-paypal-express-checkout
 - styled-components
