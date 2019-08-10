@@ -1,0 +1,20 @@
+module.exports = {
+  rules: {
+    indentation: 2,
+    'string-quotes': 'single',
+    'no-duplicate-selectors': true,
+    'color-hex-case': 'lower',
+    'color-hex-length': 'short',
+    'selector-combinator-space-after': 'always',
+    'declaration-block-trailing-semicolon': 'always',
+    // 'declaration-no-important': true,
+    'declaration-colon-space-before': 'never',
+    'property-no-vendor-prefix': true,
+    'value-no-vendor-prefix': true,
+    'number-leading-zero': 'always',
+    'function-url-quotes': 'always',
+    'at-rule-no-vendor-prefix': true,
+    'selector-pseudo-element-colon-notation': 'double',
+    'media-feature-name-no-vendor-prefix': true,
+  },
+};
