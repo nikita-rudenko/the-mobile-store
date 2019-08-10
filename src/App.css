@@ -1,90 +1,90 @@
 :root {
-	--mainAccent: #39b891;
-	--mainLight: #95b0b2;
-	--mainWhite: #fef4f5;
-	--mainDark: #2b3e50;
-	--mainDarker: #324b4c;
-	--btnBlueMain: #25798f;
-	--btnBlueAccent: #23b9b8;
-	--btnDangerMain: #fa9435e3;
-	--btnDangerAccent: #dc3545;
-	--bgGradient: radial-gradient(
-		circle,
-		rgba(187, 187, 187, 0.6306897759103641) 30%,
-		rgba(149, 176, 178, 0.4598214285714286) 62%
-	);
+  --mainAccent: #39b891;
+  --mainLight: #95b0b2;
+  --mainWhite: #fef4f5;
+  --mainDark: #2b3e50;
+  --mainDarker: #324b4c;
+  --btnBlueMain: #25798f;
+  --btnBlueAccent: #23b9b8;
+  --btnDangerMain: #fa9435e3;
+  --btnDangerAccent: #dc3545;
+  --bgGradient: radial-gradient(
+    circle,
+    rgba(187, 187, 187, 0.6306897759103641) 30%,
+    rgba(149, 176, 178, 0.4598214285714286) 62%
+  );
 }
 
 body {
-	font-family: 'Open Sans', sans-serif !important;
-	background: var(--bgGradient) !important;
-	color: var(--mainDarker) !important;
+  font-family: 'Open Sans', sans-serif !important;
+  background: var(--bgGradient) !important;
+  color: var(--mainDarker) !important;
 }
 
 a {
-	color: var(--mainDark) !important;
-	text-decoration: none !important;
+  color: var(--mainDark) !important;
+  text-decoration: none !important;
 }
 
 .text-title {
-	letter-spacing: 0.3rem;
-	text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 .text-blue {
-	color: var(--mainDark);
+  color: var(--mainDark);
 }
 
 .logo {
-	height: 2rem;
+  height: 2rem;
 }
 
 .cart-columns {
-	background: var(--mainDark);
+  background: var(--mainDark);
 }
 
 .btn-c {
-	text-transform: uppercase;
-	color: var(--mainWhite) !important;
-	border-radius: 999rem !important;
-	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  color: var(--mainWhite) !important;
+  border-radius: 999rem !important;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn-black {
-	background: var(--mainDarker) !important;
+  background: var(--mainDarker) !important;
 }
 
 .btn-black:hover {
-	background: var(--mainAccent) !important;
+  background: var(--mainAccent) !important;
 }
 
 .btn-black:active {
-	transform: translateY(1.5px);
+  transform: translateY(1.5px);
 }
 
 .btn-trash {
-	background: var(--btnDangerMain) !important;
-	font-size: 1rem;
+  background: var(--btnDangerMain) !important;
+  font-size: 1rem;
 }
 
 .btn-trash:hover {
-	background: var(--btnDangerAccent) !important;
+  background: var(--btnDangerAccent) !important;
 }
 
 .btn-back {
-	background: var(--mainDark) !important;
+  background: var(--mainDark) !important;
 }
 
 .btn-back:hover {
-	background: var(--mainAccent) !important;
+  background: var(--mainAccent) !important;
 }
 
 .btn-delete {
-	background: var(--btnDangerMain) !important;
+  background: var(--btnDangerMain) !important;
 }
 
 @media screen and (max-width: 350px) {
-	.logo {
-		height: 1.5rem;
-	}
+  .logo {
+    height: 1.5rem;
+  }
 }
