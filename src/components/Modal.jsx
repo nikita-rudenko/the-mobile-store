@@ -9,8 +9,12 @@ function Modal() {
   return (
     <ProductConsumer>
       {value => {
+        if (value) {
+          return null;
+        }
+
         const { modalOpen, closeModal } = value;
-        const { img, title, price } = value.modalProduct;
+        const { image, title, price } = value.modalProduct;
 
         if (!modalOpen) {
           return null;
@@ -24,7 +28,7 @@ function Modal() {
                   className='col-10 mx-auto col-md-6 col-lg-4 text-center pt-4 pb-3 px-3 rounded'
                 >
                   <h3> Item Added To The Cart</h3>
-                  <img className='img-fluid p-3' src={img} alt='product' />
+                  <img className='img-fluid p-3' src={image} alt='product' />
                   <h4 className=''>{title}</h4>
                   <h5 className='font-italic font-weight-bold'>
                     <span>Price: $</span>

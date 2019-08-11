@@ -17,8 +17,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path='/' component={ProductList} />
-        <Route path='/details' component={Details} />
-        <Route path='/cart' component={Cart} />
+        <Route exact path='/details/:id' component={Details} />
+        <Route exact path='/cart' component={Cart} />
         <Route component={Default} />
       </Switch>
       <Modal />

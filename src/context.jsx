@@ -1,19 +1,17 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-import { detailsPhone, storePhones } from './data';
-
 const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
   state = {
     products: [],
-    details: detailsPhone,
+    details: null,
     cart: [],
     modalOpen: false,
     confirmOpen: false,
     onConfirm: [],
-    modalProduct: detailsPhone,
+    modalProduct: null,
     itemsTotalCount: 0,
     cartSubTotal: 0,
     cartTax: 0,
@@ -24,53 +22,55 @@ class ProductProvider extends Component {
     this.setProducts();
   }
 
-  // copy products
-  setProducts = () => {
-    let tempProducts = [];
-    storePhones.forEach(item => {
-      const singleItem = { ...item };
-      tempProducts = [...tempProducts, singleItem];
-    });
-    this.setState(() => {
-      return { products: tempProducts };
-    });
+  setProducts = async () => {
+    await fetch(
+      'https://cors-anywhere.herokuapp.com/the-mobile-store.herokuapp.com/api/phones/'
+    )
+      .then(res => res.json())
+      .then(data =>
+        this.setState({
+          products: data,
+        })
+      );
   };
 
-  getItem = id => {
-    const { products } = this.state;
-    return products.find(item => item.id === id);
-  };
-
-  handleDetails = id => {
-    const product = this.getItem(id);
+  setDetails = data => {
     this.setState({
-      details: product,
+      details: data,
     });
   };
 
-  handleAddToCart = id => {
-    const { products } = this.state;
-    const tempProducts = [...products];
-    const index = tempProducts.indexOf(this.getItem(id));
-    const product = tempProducts[index];
-    product.inCart = true;
-    product.count = 1;
-    const { price } = product;
-    product.total = price;
+  handleDetails = async id => {
+    const link = `https://cors-anywhere.herokuapp.com/the-mobile-store.herokuapp.com/api/phones/${id}`;
 
-    this.setState(
-      () => {
-        const { cart } = this.state;
-        return {
-          products: tempProducts,
-          cart: [...cart, product],
-        };
-      },
-      () => {
-        this.addTotals();
-      }
-    );
+    await fetch(link)
+      .then(res => res.json())
+      .then(data => this.setDetails(data));
   };
+
+  // handleAddToCart = (id = 1) => {
+  //   const { products } = this.state;
+  //   const tempProducts = [...products];
+  //   const index = tempProducts.indexOf(this.getItem(id));
+  //   const product = tempProducts[index];
+  //   product.inCart = true;
+  //   product.count = 1;
+  //   const { price } = product;
+  //   product.total = price;
+
+  //   this.setState(
+  //     () => {
+  //       const { cart } = this.state;
+  //       return {
+  //         products: tempProducts,
+  //         cart: [...cart, product],
+  //       };
+  //     },
+  //     () => {
+  //       this.addTotals();
+  //     }
+  //   );
+  // };
 
   openModal = id => {
     const product = this.getItem(id);
@@ -234,7 +234,7 @@ class ProductProvider extends Component {
         value={{
           ...this.state,
           handleDetails: this.handleDetails,
-          handleAddToCart: this.handleAddToCart,
+          // handleAddToCart: this.handleAddToCart,
           openModal: this.openModal,
           closeModal: this.closeModal,
           increment: this.increment,
