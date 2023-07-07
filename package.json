@@ -33,6 +33,6 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-simple-import-sort": "^4.0.0",
     "prettier": "^1.18.2",
-    "stylelint": "^10.1.0"
+    "stylelint": "^15.10.1"
   }
 }
